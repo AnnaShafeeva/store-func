@@ -14,7 +14,14 @@ function App() {
 
   return (
     <div className="window">
-      <ShopItemFunc item={item} />
+      <ShopItemFunc
+        brand={item.brand}
+        title={item.title}
+        description={item.description}
+        descriptionFull={item.descriptionFull}
+        price={item.price}
+        currency={item.currency}
+      />
     </div>
   );
 }
